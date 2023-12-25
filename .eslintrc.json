@@ -3,7 +3,6 @@
 	"plugins": ["@typescript-eslint", "import"],
 	"extends": [
 		"next/core-web-vitals",
-		"plugin:storybook/recommended",
 		"plugin:sonarjs/recommended",
 		"plugin:@typescript-eslint/recommended"
 	],
