@@ -1,0 +1,41 @@
+.navHeader {
+ @apply bg-white w-full relative overflow-hidden;
+}
+
+.navHeight {
+ @apply sm:h-full sm:absolute md:h-auto md:relative sm:w-full sm:transition-all;
+}
+
+.navWrapper {
+ @apply md:mx-auto;
+}
+
+.subWrapper {
+ @apply mx-auto bg-[#FF7C1E];
+}
+
+.subContent {
+ @apply max-w-4xl mx-auto;
+}
+
+.hide {
+ @apply hidden;
+}
+
+.mobileMenu {
+ @apply sm:flex sm:flex-col sm:justify-center sm:items-center;
+}
+
+
+
+.navContent {
+ @apply flex relative md:justify-center sm:justify-between sm:w-full md:space-x-9;
+}
+
+.subflex{
+ @apply hidden md:block;
+}
+
+.humberger {
+ @apply md:hidden flex cursor-pointer justify-center items-center w-12;
+}
