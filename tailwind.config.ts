@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('tailwindcss').Config} */
 
 const colors = require('tailwindcss/colors')
@@ -25,7 +26,7 @@ module.exports = {
 			yellow: colors.yellow,
 			sky: colors.sky,
 			transparent: colors.transparent,
-   orange: colors.orange
+			orange: colors.orange
 		},
 		fontFamily: {
 			primary: ['Inter', 'sans-serif']
