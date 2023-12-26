@@ -1,9 +1,10 @@
-import Menu from "@/components/common/elements/Menu"
-import {menuItems} from "./menu-list"
+import Menu from '@/components/common/elements/Menu'
+
+import {menuItems} from './menu-list'
 const HeadNavMenu: React.FC = () => {
 
 	return (
-  <Menu itemsMenu={menuItems} />
+		<Menu itemsMenu={menuItems} />
 	)
 }
 

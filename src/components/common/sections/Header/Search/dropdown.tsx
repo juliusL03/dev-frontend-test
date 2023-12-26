@@ -1,8 +1,10 @@
-import { Dropdown, Space } from 'antd'
-import styles from './search.module.scss'
+import {Dropdown, Space} from 'antd'
 import clsx from 'clsx'
-import { useState } from 'react'
-import { DropDownIcon } from '@/assets/icons'
+import {useState} from 'react'
+
+import {DropDownIcon} from '@/assets/icons'
+
+import styles from './search.module.scss'
 type list = string
 
 
@@ -12,29 +14,29 @@ type props = {
 }
 
 const DropdownBrand: React.FC<props> = ({onSelect, listItems}) => {
- const [name, setName] = useState(listItems[0]) 
- const selectHandler = (selected: string) => {
-  setName(selected)
-  onSelect(selected)
- }
+	const [name, setName] = useState(listItems[0]) 
+	const selectHandler = (selected: string) => {
+		setName(selected)
+		onSelect(selected)
+	}
 
- const newMenu = listItems.map((item, index) => ({
-  key: `${index}`,
-  label: (
-   <label onClick={() => (selectHandler(item))}>
-     {item}
-   </label>
- )
- }))
+	const newMenu = listItems.map((item, index) => ({
+		key: `${index}`,
+		label: (
+			<label onClick={() => (selectHandler(item))}>
+				{item}
+			</label>
+		)
+	}))
 
-  return <Dropdown menu={{ items: newMenu }} placement="bottom" arrow>
-    <a onClick={(e) => e.preventDefault()}>
-      <Space className={clsx(styles.baseText)}>
-        {name}
-        <div className={clsx(styles.center)}><DropDownIcon /></div>
-      </Space>
-    </a>
-  </Dropdown>
+	return <Dropdown menu={{items: newMenu}} placement="bottom" arrow>
+		<a onClick={(e) => e.preventDefault()}>
+			<Space className={clsx(styles.baseText)}>
+				{name}
+				<div className={clsx(styles.center)}><DropDownIcon /></div>
+			</Space>
+		</a>
+	</Dropdown>
 }
 
-export default DropdownBrand;
+export default DropdownBrand

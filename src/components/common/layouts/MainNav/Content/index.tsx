@@ -1,4 +1,3 @@
-import {Layout} from 'antd'
 import React, {ReactNode} from 'react'
 import styles from './content.module.scss'
 import clsx from 'clsx'

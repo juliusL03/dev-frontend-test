@@ -1,5 +1,4 @@
-import useStore from '@/utils/store'
-import { TSignupPayload } from '@/utils/store/slices/auth/types'
+import {TSignupPayload} from '@/utils/store/slices/auth/types'
 import {useCallback, useEffect, useState} from 'react'
 import useCustomForm from '@/components/common/forms/Form/useCustomForm'
 import {FieldValues, SubmitHandler} from 'react-hook-form'
@@ -7,38 +6,40 @@ import {loginFields} from './fields'
 import {useRouter} from 'next/router'
 import useNotification, {ENotificationType} from '@/utils/hooks/useNotification'
 
+import useStore from '@/utils/store'
+
 const useLogic = () => {
 
 	const {
 		loading,
 		error,
-  signup,
-  authenticated
+		signup,
+		authenticated
 	} = useStore(
 		(state) => ({
 			loading: state.loading,
 			error: state.error,
-   signup: state.signup,
-   authenticated: state.authenticated
+			signup: state.signup,
+			authenticated: state.authenticated
 		})
 	)
 
- const router = useRouter()
- const {NotificationContextHolder, openNotification} = useNotification()
+	const router = useRouter()
+	const {NotificationContextHolder, openNotification} = useNotification()
 	const [authenticating, setAuthenticating] = useState(false)
 
- const submitHandler: SubmitHandler<FieldValues> = useCallback(
+	const submitHandler: SubmitHandler<FieldValues> = useCallback(
 		async (formData) => {
-   setAuthenticating(true)
+			setAuthenticating(true)
 			// sent to api
-   signup(formData as TSignupPayload)
+			signup(formData as TSignupPayload)
 		},
 		[signup]
 	)
 
- const {submit, Form} = useCustomForm({fields: loginFields, onSubmit: submitHandler})
+	const {submit, Form} = useCustomForm({fields: loginFields, onSubmit: submitHandler})
 
- useEffect(() => {
+	useEffect(() => {
 		if (authenticated && authenticating) {
 			openNotification(ENotificationType.Success, 'Sign Up successfully', 'top')
 
@@ -53,9 +54,9 @@ const useLogic = () => {
 	return {
 		error,
 		loading,
-  submit,
-  Form,
-  NotificationContextHolder
+		submit,
+		Form,
+		NotificationContextHolder
 	}
 }
 

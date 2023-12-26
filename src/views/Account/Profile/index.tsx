@@ -1,3 +1,3 @@
-import MyAccount from "./account";
+import MyAccount from './account'
 
 export {MyAccount}

@@ -1,7 +1,7 @@
 import {FieldTypes, TField} from '@/forms/types'
 
 export const loginFields: TField[] = [
- {
+	{
 		type: FieldTypes.TEXT,
 		name: 'first_name',
 		placeholder: '',
@@ -11,7 +11,7 @@ export const loginFields: TField[] = [
 		layout: 'vertical',
 		inputWidth: 'auto'
 	},
- {
+	{
 		type: FieldTypes.TEXT,
 		name: 'last_name',
 		placeholder: '',
@@ -41,7 +41,7 @@ export const loginFields: TField[] = [
 		labelWidth: 10,
 		inputWidth: 'auto'
 	},
- {
+	{
 		type: FieldTypes.PASSWORD,
 		name: 'confirm_password',
 		placeholder: '',

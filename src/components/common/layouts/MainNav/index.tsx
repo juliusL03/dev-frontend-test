@@ -1,9 +1,12 @@
 import {Layout} from 'antd'
 import Head from 'next/head'
-import Container from './Container'
+
 import Header from '../../sections/Header'
-import Content from './Content'
 import Footer from '../../sections/Footer'
+
+import Container from './Container'
+import Content from './Content'
+
 const title = 'PC crits: Shop with rare review'
 
 type TProps = {
@@ -16,10 +19,10 @@ const MainNav: React.FC<TProps> = ({children}) => {
 			<Head>
 				<title>{title}</title>
 			</Head>
-   <Container>
-   <Header />
+			<Container>
+				<Header />
 				<Content>{children}</Content>
-    <Footer />
+				<Footer />
 			</Container>
 		</Layout>
 	)

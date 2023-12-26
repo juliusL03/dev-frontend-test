@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {ErrorMessage} from '@hookform/error-message'
 import {Input as InputAntd} from 'antd'
 import clsx from 'clsx'

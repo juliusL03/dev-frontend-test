@@ -10,7 +10,7 @@ export const loginFields: TField[] = [
 		labelWidth: 20,
 		layout: 'vertical',
 		inputWidth: 'auto',
-  value: 'test@test.com'
+		value: 'test@test.com'
 	},
 	{
 		type: FieldTypes.PASSWORD,
@@ -21,6 +21,6 @@ export const loginFields: TField[] = [
 		layout: 'vertical',
 		labelWidth: 20,
 		inputWidth: 'auto',
-  value: 'password123!'
+		value: 'password123!'
 	}
 ]
