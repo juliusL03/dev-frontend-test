@@ -1,13 +1,13 @@
-import MainNav from '@/components/common/layouts/MainNav'
 import Image from 'next/image'
 import clsx from 'clsx'
 import {NextPage} from 'next'
-import styles from './signup.module.scss'
 import {Button} from 'antd'
-import useLogic from './useLogic'
 
-
+import MainNav from '@/components/common/layouts/MainNav'
 import logo from '@/assets/image/new-pccrits-logo-155.png'
+
+import styles from './signup.module.scss'
+import useLogic from './useLogic'
 
 const SignUp: NextPage = () => {
 	const {submit, Form, NotificationContextHolder} = useLogic()

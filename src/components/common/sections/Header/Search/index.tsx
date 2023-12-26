@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import clsx from 'clsx'
 import {useState} from 'react'
 

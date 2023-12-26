@@ -1,6 +1,7 @@
 import React, {ReactNode} from 'react'
-import styles from './content.module.scss'
 import clsx from 'clsx'
+
+import styles from './content.module.scss'
 
 type TProps = {
 	children: ReactNode

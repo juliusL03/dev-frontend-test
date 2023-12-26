@@ -1,5 +1,6 @@
-import Developer from '@/views/Developer'
 import {NextPage} from 'next'
+
+import Developer from '@/views/Developer'
 
 
 const DeveloperPage: NextPage = () => {

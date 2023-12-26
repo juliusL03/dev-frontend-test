@@ -1,12 +1,13 @@
-import {TSignupPayload} from '@/utils/store/slices/auth/types'
 import {useCallback, useEffect, useState} from 'react'
-import useCustomForm from '@/components/common/forms/Form/useCustomForm'
 import {FieldValues, SubmitHandler} from 'react-hook-form'
-import {loginFields} from './fields'
 import {useRouter} from 'next/router'
-import useNotification, {ENotificationType} from '@/utils/hooks/useNotification'
 
+import useCustomForm from '@/components/common/forms/Form/useCustomForm'
+import {TSignupPayload} from '@/utils/store/slices/auth/types'
+import useNotification, {ENotificationType} from '@/utils/hooks/useNotification'
 import useStore from '@/utils/store'
+
+import {loginFields} from './fields'
 
 const useLogic = () => {
 

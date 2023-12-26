@@ -1,5 +1,6 @@
-import SignIn from '@/views/SignIn'
 import {NextPage} from 'next'
+
+import SignIn from '@/views/SignIn'
 
 
 const SignInPage: NextPage = () => {

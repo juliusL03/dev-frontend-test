@@ -1,5 +1,5 @@
 export type ItemProps = {
-	image?: string,
+	image: any,
  name: string,
  price: string,
  discount?: string
