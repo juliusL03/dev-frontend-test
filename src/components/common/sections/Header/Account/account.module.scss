@@ -1,0 +1,10 @@
+.accountSection {
+ @apply flex flex-col text-sm text-gray-500 pr-8; 
+}
+
+.me {
+ @apply font-medium text-[#000000];
+}
+ .isMobile {
+  @apply hidden lg:block flex justify-center items-center m-3;
+ }

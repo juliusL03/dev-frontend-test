@@ -3,7 +3,7 @@
 }
 
 .wrapper {
- @apply flex border-4 border-[#FC7B32] border-solid rounded-lg;
+ @apply flex border-4 border-[#FC7B32] border-solid;
 }
 
 .button {
@@ -19,7 +19,7 @@
 }
 
 .textBabel {
- @apply block font-medium text-lg text-gray-900 bg-blue-700 rounded md:bg-transparent md:text-gray-900 md:p-0 md:ml-8;
+ @apply block font-medium text-lg text-gray-900 bg-blue-700 md:bg-transparent md:text-gray-900 md:p-0 md:ml-8;
 }
 
 .inputSection {
@@ -31,7 +31,7 @@
 }
 
 .text {
- @apply w-72 border-none rounded-l-lg pl-2 outline-none;
+ @apply w-72 border-none pl-2 outline-none;
 }
 
 .baseText {

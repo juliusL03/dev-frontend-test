@@ -11,11 +11,11 @@
 }
 
 .subWrapper {
- @apply mx-auto bg-[#FF7C1E];
+ @apply mx-auto bg-[#03133B];
 }
 
 .subContent {
- @apply max-w-4xl mx-auto;
+ @apply max-w-7xl mx-auto;
 }
 
 .hide {
@@ -29,7 +29,7 @@
 
 
 .navContent {
- @apply flex relative md:justify-center sm:justify-between sm:w-full md:space-x-9;
+ @apply flex relative md:justify-center sm:justify-between w-full md:space-x-9;
 }
 
 .subflex{
