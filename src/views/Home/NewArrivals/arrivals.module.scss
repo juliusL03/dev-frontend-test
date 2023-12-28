@@ -31,11 +31,11 @@
 }
 
 .rate {
- @apply text-[16px] sm:text-[7px] font-semibold;
+ @apply md:text-[16px] sm:text-[7px] font-semibold;
 }
 
 .price {
- @apply text-[14px] sm:text-[8px] font-semibold;
+ @apply md:text-[14px] sm:text-[8px] font-semibold;
 }
 
 .context {
