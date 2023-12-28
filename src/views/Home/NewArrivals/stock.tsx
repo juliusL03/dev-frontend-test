@@ -14,7 +14,7 @@ const Stock: React.FC<props> = ({urlImage, name, rate, price}) => {
 	return(
 		<div className={clsx(styles.cardWrap)}>
 			<div className={clsx(styles.cardImg)}>
-				<Image src={urlImage} alt={name} />
+				<Image src={urlImage} alt={name} className={clsx(styles.imageView)}/>
 			</div>
 			<div className={clsx(styles.label)}>
 				<label className={clsx(styles.name)}>{name}</label>

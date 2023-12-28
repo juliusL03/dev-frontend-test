@@ -38,7 +38,7 @@ const Popular = () => {
 	]
 	return(
 		<div className={clsx(styles.container)}>
-			<h2>Popular Categories</h2>
+			<h2 className={clsx(styles.title)}>Popular Categories</h2>
 			<div className={clsx(styles.context)}>
 				{categories.map((item) => (
 					<Category key={item.category} urlImage={item.urlImage} category={item.category} />

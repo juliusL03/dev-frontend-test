@@ -9,7 +9,7 @@ module.exports = {
 	purge: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}', './src/views/**/*.{ts,tsx}'],
 	theme: {
 		screens: {
-			sm: '480px',
+			sm: '320px',
 			md: '768px',
 			lg: '976px',
 			xl: '1440px'

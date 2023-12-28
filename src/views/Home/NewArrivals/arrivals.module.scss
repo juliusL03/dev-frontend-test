@@ -3,19 +3,23 @@
 }
 
 .title {
- @apply flex justify-between;
+ @apply flex justify-between items-center;
 
  .views {
-  @apply pt-3 text-[#FC7B32] hover:text-[#fc7c32b0] mr-2;
+  @apply sm:text-[6px] md:text-sm pt-3 text-[#FC7B32] hover:text-[#fc7c32b0] mr-2;
  }
 }
 
 .cardWrap {
- @apply h-full w-[190px] hover:opacity-95;
+ @apply h-full md:w-[190px] sm:w-[110px] hover:opacity-95;
 
  .cardImg {
-  @apply w-[190px] h-[197px] bg-white rounded-xl shadow-md hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
+  @apply md:w-[190px] md:h-[197px] sm:w-[70px] sm:h-[67px] bg-white rounded-xl shadow-md hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
  }
+}
+
+.titleName{
+ @apply sm:text-[11px] sm:pl-1 md:text-2xl
 }
 
 .label {
@@ -23,22 +27,26 @@
 }
 
 .name {
- @apply text-[16px] font-semibold;
+ @apply md:text-[16px] sm:text-[8px] font-semibold;
 }
 
 .rate {
- @apply text-[16px] font-semibold;
+ @apply text-[16px] sm:text-[7px] font-semibold;
 }
 
 .price {
- @apply text-[14px] font-semibold;
+ @apply text-[14px] sm:text-[8px] font-semibold;
 }
 
 .context {
- @apply flex space-x-5;
+ @apply flex md:space-x-5;
 }
 
 .viewMore {
- @apply border-none bg-[#FC7B32] text-white text-lg rounded-md px-4 py-1 hover:bg-[#fc7c32cb];
+ @apply border-none bg-[#FC7B32] text-white md:text-lg sm:text-[9px] rounded-md px-4 py-1 hover:bg-[#fc7c32cb];
+}
+
+.imageView {
+ @apply sm:w-[45px] sm:h-[52px] md:w-auto md:h-auto;
 }
 

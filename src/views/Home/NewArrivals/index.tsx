@@ -40,7 +40,7 @@ const NewArrivals: NextPage = () => {
 		<div>
 			<div className={clsx(styles.container)}>
 				<div className={clsx(styles.title)}>
-					<h2>New Arrivals</h2>
+					<h2 className={clsx(styles.titleName)}>New Arrivals</h2>
 					<p onClick={() => {}} className={clsx(styles.views)}>View All</p>
 				</div>
 				<div className={clsx(styles.context)}>

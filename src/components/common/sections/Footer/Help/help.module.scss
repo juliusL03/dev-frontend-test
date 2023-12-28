@@ -1,5 +1,5 @@
 .container {
- @apply flex flex-col;
+ @apply hidden md:block flex flex-col ;
 }
 
 .name {

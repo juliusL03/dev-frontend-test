@@ -12,7 +12,7 @@ const Category: React.FC<props> = ({urlImage, category}) => {
 	return(
 		<div className={clsx(styles.cardWrap)}>
 			<div className={clsx(styles.cardImg)}>
-				<Image src={urlImage} alt={category} />
+				<Image src={urlImage} alt={category} className={clsx(styles.imgView)}/>
 			</div>
 			<p className={clsx(styles.name)}>{category}</p>
 		</div>

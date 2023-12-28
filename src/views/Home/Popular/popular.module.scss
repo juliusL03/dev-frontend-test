@@ -1,20 +1,25 @@
 .container {
- @apply text-center md:w-[810px] md:h-[266px];
+ @apply text-center md:w-[810px] md:h-[216px];
 }
 
 .cardWrap {
- @apply h-[144] w-[120px] hover:opacity-95 hover:transition-all;
+ @apply sm:flex sm:flex-col sm:justify-center sm:items-center md:h-[184px] md:w-[120px] sm:h-[65px] sm:w-[85px] hover:opacity-95 hover:transition-all;
 
  .cardImg {
-  @apply w-[112px] h-[122px] bg-white rounded-xl shadow-md  hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
+  @apply md:w-[112px] md:h-[122px] sm:w-[40px] sm:h-[45px] bg-white rounded-xl shadow-md  hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
  }
-
+.imgView{
+ @apply sm:w-[35px] sm:h-[32px] md:w-auto md:h-auto;
+}
  .name {
-  @apply text-center text-[16px] font-semibold m-2;
+  @apply text-center md:text-[16px] sm:text-[6px] font-semibold;
  }
 }
 
 .context {
- @apply flex space-x-5;
+ @apply flex font-semibold md:space-x-5;
 }
 
+.title {
+ @apply sm:text-sm md:text-xl;
+}

@@ -1,9 +1,13 @@
 .container {
- @apply flex flex-row md:w-[810px] md:h-[266px]  mt-5;
+ @apply flex md:w-[810px] md:h-[266px]  sm:w-[480p] sm:h-[122px] md:mt-5 sm:mt-2;
 }
 
 .lightgreen {
  @apply bg-[#32fc54af]
+}
+
+.imgSize {
+ @apply md:w-[588px] md:h-[272px] sm:w-[558px] sm:h-[126px] items-center justify-center flex;
 }
 
 .lightblue {
@@ -15,13 +19,13 @@
 }
 
 .title {
- @apply font-bold md:text-4xl sm:text-xl mb-0;
+ @apply font-bold md:text-4xl sm:text-[12px] mb-0;
 }
 
 .subtitle {
- @apply font-medium md:text-xl sm:text-base md:w-[278px] sm:w-[140px] mt-0;
+ @apply md:font-normal md:text-xl sm:text-[10px] md:w-[278px] sm:w-[140px] mt-0;
 }
 
 .shopNow {
- @apply transition-all border-none bg-[#FC7B32] text-white md:text-xl rounded-2xl px-6 py-2 transition-all duration-75 hover:border-[#03133B] hover:border-solid;
+ @apply transition-all border-none bg-[#FC7B32] sm:text-[11px] text-white md:text-xl rounded-2xl md:px-6 md:py-2 sm:px-2 sm:py-1 transition-all duration-75 hover:border-[#03133B] hover:border-solid;
 }

@@ -26,8 +26,8 @@ const Banner: React.FC<props> = ({theme, title, subtitle, link}) => {
 				<p className={clsx(styles.subtitle)}>{subtitle} </p>
 				<button className={clsx(styles.shopNow)} onClick={onSubmit}>Shop Now</button>
 			</div>
-			<div>
-				<Image src={laptop} alt={''}/>
+			<div className={clsx(styles.imgSize)}>
+				<Image src={laptop} alt={'banner'} layout="responsive"/> 
 			</div>
 		</div>
 	)
