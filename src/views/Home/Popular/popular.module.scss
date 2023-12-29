@@ -6,10 +6,10 @@
  @apply sm:flex sm:flex-col sm:justify-center sm:items-center md:h-[184px] md:w-[120px] sm:h-[65px] sm:w-[85px] hover:opacity-95 hover:transition-all;
 
  .cardImg {
-  @apply md:w-[112px] md:h-[122px] sm:w-[40px] sm:h-[45px] bg-white rounded-xl shadow-md  hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
+  @apply md:w-[112px] md:h-[122px] sm:w-[40px] sm:h-[45px] bg-[#d6f8ee62] rounded-full shadow-md  hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
  }
 .imgView{
- @apply sm:w-[35px] sm:h-[32px] md:w-auto md:h-auto;
+ @apply sm:w-[25px] sm:h-[32px] md:w-auto md:h-auto;
 }
  .name {
   @apply text-center md:text-[16px] sm:text-[6px] font-semibold;
@@ -22,4 +22,8 @@
 
 .title {
  @apply sm:text-sm md:text-xl;
+}
+
+.stock {
+ @apply text-[10px] -mt-4 text-gray-500
 }

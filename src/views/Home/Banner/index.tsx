@@ -1,13 +1,14 @@
 import clsx from 'clsx'
 import Image from 'next/image'
 import {useRouter} from 'next/router'
+import {ReactNode} from 'react'
 
 import styles from './banner.module.scss'
 
 type props = {
  theme?: string,
- title: string,
- subtitle: string,
+ title: string | ReactNode,
+ subtitle: string | ReactNode,
  link: string,
  hero?: boolean,
  image?: any

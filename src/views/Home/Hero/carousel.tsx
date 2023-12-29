@@ -24,8 +24,8 @@ const ImageSlider: React.FC = () => (
 				</div>
 				<div className={clsx(styles.item)}>
 					<Banner 
-						title={'HyperX Cloud III - Gaming Headset'} 
-						subtitle={'Sale 35% off'} 
+						title=<>Hyper<span  className={clsx(styles.highlight)}>X</span> Cloud III - Gaming Headset</> 
+						subtitle=<span className={clsx(styles.discount)}>Sale 35% off</span> 
 						link={'/acer/laptop'}
 						hero={true}
 						image={hyperX}

@@ -13,35 +13,41 @@ const Popular = () => {
 	const categories = [
 		{
 			urlImage: camera,
-			category: 'Camera'
+			category: 'Camera',
+			stock: 9
 		},
 		{
 			urlImage: laptop,
-			category: 'Laptop'
+			category: 'Laptop',
+			stock: 25
 		},
 		{
 			urlImage: headphone,
-			category: 'Headphone'
+			category: 'Headphone',
+			stock: 57
 		},
 		{
 			urlImage: smartphone,
-			category: 'Smartphone'
+			category: 'Smartphone',
+			stock: 5
 		},
 		{
 			urlImage: tablet,
-			category: 'Tablet'
+			category: 'Tablet',
+			stock: 65
 		},
 		{
 			urlImage: watch,
-			category: 'Smartwatches'
+			category: 'Smartwatches',
+			stock: 115
 		}
 	]
 	return(
 		<div className={clsx(styles.container)}>
-			<h2 className={clsx(styles.title)}>Popular Categories</h2>
+			{/* <h2 className={clsx(styles.title)}>Popular Categories</h2> */}
 			<div className={clsx(styles.context)}>
 				{categories.map((item) => (
-					<Category key={item.category} urlImage={item.urlImage} category={item.category} />
+					<Category key={item.category} urlImage={item.urlImage} category={item.category} stock={item.stock} />
 				))}
 			</div>
 		</div>
