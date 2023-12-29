@@ -37,7 +37,7 @@ const NewArrivals: NextPage = () => {
 		}
 	]
 	return(
-		<div>
+		<div className={clsx(styles.center)}>
 			<div className={clsx(styles.container)}>
 				<div className={clsx(styles.title)}>
 					<h2 className={clsx(styles.titleName)}>New Arrivals</h2>

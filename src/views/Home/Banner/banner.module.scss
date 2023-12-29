@@ -2,6 +2,10 @@
  @apply flex md:w-[810px] md:h-[266px]  sm:w-[480p] sm:h-[122px] md:mt-5 sm:mt-2;
 }
 
+.heroContainer {
+ @apply flex md:w-[920px] md:h-[336px]  sm:w-[480p] sm:h-[122px] md:mt-5 sm:mt-2
+}
+
 .lightgreen {
  @apply bg-[#32fc54af]
 }
@@ -16,6 +20,10 @@
 
 .text {
  @apply ml-7;
+}
+
+.heroText {
+ @apply ml-0;
 }
 
 .title {

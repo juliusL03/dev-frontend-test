@@ -38,7 +38,7 @@ const Products: NextPage = () => {
 		}
 	]
 	return(
-		<div>
+		<div className={clsx(styles.center)}>
 			<div className={clsx(styles.container)}>
 				<div className={clsx(styles.title)}>
 					<h2>Products</h2>

@@ -1,0 +1,15 @@
+.container {
+ @apply w-full h-[365px] flex justify-center items-center bg-[#d6f0faaf];
+}
+
+.content {
+ @apply w-[910px]
+}
+
+.itemCenter {
+ @apply bg-purple-200
+}
+
+.item {
+ @apply m-0
+}

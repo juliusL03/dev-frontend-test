@@ -1,5 +1,5 @@
 .container {
- @apply text-center md:w-[810px] md:h-[216px];
+ @apply text-center w-full md:h-[216px] flex flex-col justify-center items-center;
 }
 
 .cardWrap {
