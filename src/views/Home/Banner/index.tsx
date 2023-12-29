@@ -27,7 +27,7 @@ const Banner: React.FC<props> = ({theme, title, subtitle, link, hero, image}) =>
 				<p className={clsx(styles.subtitle)}>{subtitle} </p>
 				<button className={clsx(styles.shopNow)} onClick={onSubmit}>Shop Now</button>
 			</div>
-			<div className={clsx(styles.imgSize)}>
+			<div className={clsx(!hero ? styles.imgSize : styles.heroImgSize)}>
 				<Image src={image} alt={'banner'} layout="responsive"/> 
 			</div>
 		</div>

@@ -8,6 +8,7 @@ import BurgerMenu from './burgerMenu'
 import BurgerItemMenu from './burgerItems'
 import SubmenuSecondary from './TopNav'
 import Account from './Account'
+import BottomNav from './BottomNav'
 
 const Header: React.FC = () => {
 	const [mobileMenu, setMobileMenu] = useState(false)
@@ -34,6 +35,7 @@ const Header: React.FC = () => {
 					</div>
 				</div>
 			</div>
+			<BottomNav />
 			<div className={clsx(!mobileMenu && styles.hide, mobileMenu && styles.mobileMenu)}>
 				<BurgerItemMenu />
 			</div>

@@ -18,7 +18,7 @@ const DropdownAnt: React.FC<props> = ({onSelect, listItems}) => {
 	const selectHandler = (selected: string) => {
 		setName(selected)
 		onSelect(selected)
-		setOpen(!setOpen)
+		setOpen(!open)
 	}
 
 	const newMenu = listItems.map((item, index) => ({
@@ -31,7 +31,11 @@ const DropdownAnt: React.FC<props> = ({onSelect, listItems}) => {
 	}))
 
 	return <Dropdown menu={{items: newMenu}} placement="bottom">
-		<a onClick={(e) => e.preventDefault()}>
+		<a onClick={(e) => {
+			e.preventDefault()
+			setOpen(!open)
+		}
+		}>
 			<Space className={clsx(styles.baseText)}>
 				{name}
 				<div className={clsx(styles.center)}>

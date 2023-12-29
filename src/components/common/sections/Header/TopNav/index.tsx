@@ -3,7 +3,7 @@ import {Fragment, useState,} from 'react'
 
 import DropdownAnt from '@/components/common/elements/Dropdown-antd'
 
-import styles from './submenu.module.scss'
+import styles from './topNav.module.scss'
 
 const SubmenuSecondary: React.FC = () => {
 	const [language, setLanguage] = useState('')

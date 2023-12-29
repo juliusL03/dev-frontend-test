@@ -14,6 +14,10 @@
  @apply md:w-[588px] md:h-[272px] sm:w-[558px] sm:h-[126px] items-center justify-center flex;
 }
 
+.heroImgSize {
+ @apply md:w-[588px] md:h-[322px] sm:w-[558px] sm:h-[126px] items-center justify-center flex;
+}
+
 .lightblue {
  @apply bg-[#32d4fcaf]
 }
