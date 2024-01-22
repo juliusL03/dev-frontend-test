@@ -29,7 +29,7 @@ const BottomNav: React.FC = () => {
 						<div><PhoneOutlined style={{fontSize: '25px', color: '#fc7d28'}}/></div>
 						<div className={clsx(styles.info)}>
 							<span className={clsx(styles.textSm)}>Cellphone</span>
-							<span className={clsx(styles.textMd)}>0997-1234-567</span>
+							<span className={clsx(styles.textMd)}>+(63)997-1234-567</span>
 						</div>
 					</div>
 				</div>

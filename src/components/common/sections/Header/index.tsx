@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import {clsx} from 'clsx'
 
+import useStore from '@/utils/store'
+
 import styles from './header.module.scss'
 import HeadbarLogo from './Logo'
 import Search from './Search'
@@ -9,8 +11,13 @@ import BurgerItemMenu from './burgerItems'
 import SubmenuSecondary from './TopNav'
 import Account from './Account'
 import BottomNav from './BottomNav'
+import Profile from './Profile'
 
 const Header: React.FC = () => {
+	const {authenticated} = useStore ((state) => ({
+		authenticated: state.authenticated
+	}))
+
 	const [mobileMenu, setMobileMenu] = useState(false)
 	const onBurger = () => {
 		setMobileMenu(!mobileMenu)
@@ -29,7 +36,7 @@ const Header: React.FC = () => {
 				<div className={clsx(styles.navContent)}>
 					<HeadbarLogo />
 					<Search />
-					<Account />
+					{authenticated ? <Profile firstName={'new'} /> : <Account />}
 					<div className={clsx(styles.humberger)}>
 						<BurgerMenu onClick={onBurger} />
 					</div>

@@ -1,11 +1,11 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import clsx from 'clsx'
 import {NextPage} from 'next'
 import {Button} from 'antd'
 import Link from 'next/link'
 
 import MainNav from '@/components/common/layouts/MainNav'
-import logo from '@/assets/image/new-pccrits-logo-155.png'
+// import logo from '@/assets/image/new-pccrits-logo-155.png'
 
 import styles from './signin.module.scss'
 import useLogic from './useLogic'
@@ -17,9 +17,9 @@ const SignIn: NextPage = () => {
 		<MainNav>
 			{NotificationContextHolder}
 			<div className={clsx(styles.model)}>
-				<div className={styles.logo}>
+				{/* <div className={styles.logo}>
 					<Image src={logo} alt="PcCrits"/>
-				</div>
+				</div> */}
 				<h3>Please Log In</h3>
 				<hr className={clsx(styles.hr)} />
 				<Form />
